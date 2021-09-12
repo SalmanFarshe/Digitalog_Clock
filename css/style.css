@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+	margin: 0%;
+	padding: 0%;
+}
+.clock_wrap {
+	background-image: url("../img/clock.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+	position: relative;
+}
+.overlay {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.425);
+	height: 100vh;
+	width: 100%;
+}
+.clock_body {
+	background-image: url("../img/clock2.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    position: absolute;
+    transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	height: 250px;
+	width: 250px;
+	border-radius: 100%;
+	border: 10px solid black;
+    box-shadow: 0px 0px 65px 50px rgba(0, 0, 0, 0.336);
+}
+
+.clock_kata{
+    height: 5px;
+    width: 65px;
+    position: absolute;
+    top: 50%;
+    left: 23%;
+	border-radius: 10px;
+    background-color: black;
+	transform: rotate(90deg);	
+	transform-origin: 100%;
+}
+.clock_kata_hours{
+	transition: 0.03s;
+	transform: rotate(120deg);
+}
+.digital_clock{
+	font-family: 'Roboto', sans-serif;
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: blanchedalmond;
+	font-size: 50px;
+	width: 250px;
+}
+.dot{
+	position: absolute;
+	height: 12px;
+	width: 12px;
+	border-radius: 50%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: black;
+}
